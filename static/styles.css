@@ -1232,3 +1232,15 @@ textarea.form-control {
     margin-bottom: 1rem;
     color: var(--primary);
 }
+
+header.scrolled {
+    background-color: rgba(44, 62, 80, 0.95); /* Slightly transparent var(--primary) */
+    box-shadow: var(--shadow-lg); /* A more prominent shadow */
+    /* You could also transition height if you want it to shrink */
+    /* height: calc(var(--header-height) - 10px); */
+}
+
+/* Ensure smooth transition for these changes */
+header {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add height if shrinking */
+}
